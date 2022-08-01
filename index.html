@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do Lista</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Montserrat:wght@200;400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="https://kit.fontawesome.com/d09571a760.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="upper-part">
+            <h1>To do list</h1>
+            <div class="colors-picker">
+                <div class="color-one"></div>
+                <div class="color-two"></div>
+            </div>
+            <i class="fa fa-paint-brush" aria-hidden="true"></i>
+            <div class="wrapper__input">
+                <input type="text" placeholder="Wpisz treść zadania..." class="task-input">
+                <button class="add-btn">Add</button>
+            </div>
+        </div>
+        <div class="lower-part">
+            <h3>Lista zadań:</h3>
+            <p class="error-1">Wpisz treść zadania!</p>
+            <p class="error-2">Brak zadań na liście</p>
+            <div class="wrapper__tasks">
+                <ul class="tasks">
+                    <!-- <li class="task">
+                        <p id="text" class="text">jakies zadanko</p>
+                        <div class="icons"><i class="fa fa-check" aria-hidden="true"></i><span
+                                class="edit">EDIT</span><i class="fa fa-times" aria-hidden="true"></i></div>
+                    </li> -->
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="edit-task">
+        <h3>Edytuj zadanie:</h3>
+        <p class="error-3">Musisz podać jakąś treść</p>
+        <input type="text" class="edit-input">
+        <div class="buttons">
+            <button class="btn-save">Zapisz</button>
+            <button class="btn-cancel">Anuluj</button>
+        </div>
+    </div>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
